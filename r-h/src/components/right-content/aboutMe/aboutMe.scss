@@ -1,0 +1,38 @@
+.aboutMe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 100%;
+    padding: 10px;
+    & .image-container {
+        & .main-profile-image {
+            height: 452px;
+            width: 400px;
+            background-image: url("../../../images/foto1.png");
+            background-size: cover;
+            transition: background-color .5s;
+        }
+    }
+
+    & .info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 30px;
+        & h1{
+            font-size: 90px;
+        }
+        & h2{
+            text-align: start;
+            font-size: 50px;
+        }
+        & p{
+            margin-top: 30px;
+            text-align: start;
+            font-size: 20px;
+        }
+    }
+
+
+}
