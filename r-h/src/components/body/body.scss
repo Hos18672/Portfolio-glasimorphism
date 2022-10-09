@@ -3,17 +3,21 @@
 main {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: auto auto;
     background-position: center top;
     background-color: rgb(252, 248, 254);
     background-image: url("./../../images/pricing-wave.webp");
     background-repeat: no-repeat;
     padding: 5px 10px;
-
+    transition: all .5s;
     & .left-container {
         padding: 5px;
+        width: fit-content;
+        transition: .5s ease-in-out;
         & .left-content-container {
             height: 100%;
+            width: fit-content;
+            transition: all .5s;
             box-shadow: rgba(69, 42, 124, 0.298) 0px 10px 30px;
             backdrop-filter: blur(60px);
             border-radius: 10px;
@@ -22,11 +26,13 @@ main {
             grid-column: 1;
             padding: 10px;  
             transition: background-color .8s, color .8s;
+            transition: width .5s ease-in-out;
             }
     }
 
     & .right-container {
         padding: 5px;
+        transition: all .5s;
         & .right-content-container {
             height: 100%;
             box-shadow: rgba(69, 42, 124, 0.127) 0px 10px 30px;
@@ -45,14 +51,10 @@ main {
 .active{
     background: rgba(5, 0, 14, 0.896);
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
     background-position: center top;
     background-image: url("./../../images/pricing-wave.webp");
-    background-repeat: no-repeat;
-    padding: 5px 10px;
     color: white;
-    transition: background-color .8s, color .8s;
+    transition: background-color .8s, color .1s;
     & .left-container {
         & .left-content-container {
             background-color: rgba(71, 65, 74, 0.579);

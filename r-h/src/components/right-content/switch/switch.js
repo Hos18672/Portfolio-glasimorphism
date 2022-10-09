@@ -14,11 +14,11 @@ export const Switch = () => {
     }
   }
   return (
-      <div class="switch">
+      <div className="switch">
         <input type="checkbox" name="toggle" onClick={handle} />
-        <label for="toggle">
-          <i class="bulb">
-            <span class="bulb-center"></span>
+        <label htmlFor="toggle">
+          <i className="bulb">
+            <span className="bulb-center"></span>
           </i>
         </label>
       </div>

@@ -6,8 +6,8 @@
     padding: 10px;
     & .image-container {
         & .main-profile-image {
-            height: 452px;
-            width: 400px;
+            height: 25vw;
+            width: 22vw;
             background-image: url("../../../images/foto1.png");
             background-size: cover;
             transition: background-color .5s;
@@ -21,11 +21,11 @@
         gap: 10px;
         padding-left: 30px;
         & h1{
-            font-size: 90px;
+            font-size: 9vw;
         }
         & h2{
             text-align: start;
-            font-size: 50px;
+            font-size: 5vw;
         }
         & p{
             margin-top: 30px;
